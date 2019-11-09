@@ -1,6 +1,6 @@
 FROM node:alpine
 
-RUN apk add --update --no-cache wget
+RUN apk add --update --no-cache curl
 
 RUN curl -O -L -C - https://github.com/microsoft/vscode/archive/1.40.0.tar.gz && \
     tar zxvf 1.40.0.tar.gz && \

@@ -1,6 +1,6 @@
 FROM node:10-alpine
 
-RUN apk add --update --no-cache curl python2
+RUN apk add --update --no-cache curl python2 build-base
 
 RUN curl -O -L -C - https://github.com/microsoft/vscode/archive/1.40.0.tar.gz && \
     tar zxf 1.40.0.tar.gz && \

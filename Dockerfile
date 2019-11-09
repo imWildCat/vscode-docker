@@ -1,6 +1,7 @@
 FROM node:10-stretch
 
-RUN apt-get install -y libsecret-1-dev
+RUN apt-get update && apt-get install -y libsecret-1-dev && \
+    apt-get clean
 
 RUN curl -O -L -C - https://github.com/microsoft/vscode/archive/1.40.0.tar.gz && \
     tar zxf 1.40.0.tar.gz && \
